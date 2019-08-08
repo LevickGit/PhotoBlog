@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <!-- link rel="stylesheet" href="./css/style.css"> -->
+    <style type="text/css">
+        html{
+        font-family: "Raleway",sans-serif;/*前面是优选字体，后面是备用字体*/
+        line-height: 1.5;
+        font-size: 15px;
+
+        }
+
+        *{
+            box-sizing: border-box;
+        }
+
+        body{
+            margin: 0;
+        }
+
+        /* ---header--- */
+        .header{
+            padding: 128px 0;
+            text-align: center;
+            opacity: 0.75;
+        }
+
+        .header h2,h1{
+            letter-spacing: 5px;
+            font-weight: 400;
+        }
+
+        .nav{
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+            display: inline-block;
+            border: 1px solid #ccc;
+            margin: 32px 0;
+        }
+
+        .nav li{
+            display: inline-block;
+            float: left;
+        }
+
+        .nav li:hover{
+            background-color: #eee;
+        }
+
+        .nav li a{
+            display: block;
+            color: #333;
+            text-decoration: none;
+            padding: 8px 16px;
+        }
+
+        .nav li a.active{
+            background-color: #eee;
+        }
+
+        /* ---photo gird--- */
+        .container{
+            padding: 0 8px;
+            filter: grayscale(0.7);
+        }
+
+        .column{
+            float: left;
+            width: 50%;
+            padding: 0 8px;
+        }
+
+        .img{
+            width: 100%;
+            height: auto;
+            margin-bottom: 8px;
+        }
+
+        .container{
+            content: "";
+            clear: both;
+            display:table;
+        }
+
+        /* ---footer--- */
+        footer{
+            padding: 34px 0;
+            text-align: center;
+            background-color: #f1f1f1;
+            margin-top: 120px;
+        }
+
+        .footer a{
+            color: #333;
+        }
+
+        /* ------responsive----- */
+        @media only screen and (max-width: 600px) {
+            .column{
+                width: 100%;
+            }
+        }
+    </style>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+    <title>blog</title>
+</head>
+<body>
+    <!--header-->
+    <header class="header">
+        <h2>PHOTOGRAPHER</h2>
+        <h1>levick</h1>
+            <ul class="nav">
+                <li><a href="#">首页</a></li>
+                <li><a href="#" class="active">作品</a></li>
+                <li><a href="#">联系我</a></li>
+            </ul>
+    </header>
+
+    <!--photo-->
+    <main class="container">
+        <!--left-->
+        <div class="column">
+            <img src="https://images.pineke.com/uploads/gallery/cover/1997/e42fa0a241b7618f821176ab34fbd3fc.jpeg-cover_webp" width="100%">
+            <img src="https://images.pineke.com/uploads/gallery/cover/1221/f656ce68ddd7003a068bf4b99f00a967.jpeg-cover_webp" width="100%">
+            <img src="https://images.pineke.com/uploads/gallery/cover/4966/ffe12486fbc48b76b2d529600f6d5fb4.jpeg-cover_webp" width="100%">
+            <img src="https://images.pineke.com/uploads/gallery/cover/600/13d5b939e6d3550c30a720c1c7471c9c.jpeg-cover_webp" width="100%">
+            <img src="https://images.pineke.com/uploads/gallery/cover/2910/85d03d5ad3d6b382bec68ac1fd2534c8.jpeg-cover_webp" width="100%">
+            <img src="https://images.pineke.com/uploads/gallery/cover/1008/7425fa567a5b1ef3c086443430f6d239.jpeg-cover_webp" width="100%">
+            <img src="https://images.pineke.com/uploads/gallery/cover/3391/af65f20ae8268d2b59730e24accc20a7.jpeg-cover_webp" width="100%">
+            <img src="https://images.pineke.com/uploads/gallery/cover/3860/8e6bc7580740f1d3b50e479e140fd47c.jpeg-cover_webp" width="100%">
+            <img src="https://images.pineke.com/uploads/gallery/cover/4309/d54149d4c435951cbeca66e292426db1.jpeg-cover_webp" width="100%">
+        </div>
+        <!--right-->
+        <div class="column">
+            <img src="https://images.pineke.com/uploads/gallery/cover/4858/3121448c207cedbec0767e121e4f8bd0.jpeg-cover_webp" width="100%">
+            <img src="https://images.pineke.com/uploads/gallery/cover/3345/b7620d21eeba105769f6bd672aaafca4.jpeg-cover_webp" width="100%">
+            <img src="https://images.pineke.com/uploads/gallery/cover/1486/8f81a59d3df64c05ee05347839c320f8.jpeg-cover_webp" width="100%">
+            <img src="https://images.pineke.com/uploads/gallery/cover/356/ed84aef9e92c10c108dc2c7483e5145f.jpeg-cover_webp" width="100%">
+            <img src="https://images.pineke.com/uploads/gallery/cover/4118/c42ca2f119a2ddfb6d24bd6c877ad46e.jpeg-cover_webp" width="100%">
+            <img src="https://images.pineke.com/uploads/gallery/cover/2535/6260b15e4f490cee498c1c3436cd85ae.jpeg-cover_webp" width="100%">
+            <img src="https://images.pineke.com/uploads/gallery/cover/4551/338c57160de35f888efa96da81577242.jpeg-cover_webp" width="100%">
+            <img src="https://images.pineke.com/uploads/gallery/cover/5284/0a81985dbeed6c7dd7b8101d6639fdfb.jpeg-cover_webp" width="100%">
+            <img src="https://images.pineke.com/uploads/gallery/cover/2866/69f79ab6a2e5c72b9d030fc037444697.jpeg-cover_webp" width="100%">
+        </div>
+    </main>
+
+    <!--footer-->
+    <footer class="footer">
+            <p>Powered By<a href="https://mola.sc2yun.com" target="_blank"> Levick </a></p>
+    </footer>
+
+</body>
+</html>
